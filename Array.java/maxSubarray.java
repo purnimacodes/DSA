@@ -8,6 +8,7 @@
 
 
   class Solution {
+   
     public int maxSubArray(int[] nums) {
         int [] nums_1={-2,1,-3,4,-1,2,1,-5,4};
         int currentSum=nums[0];
@@ -18,5 +19,5 @@
             maxSum = Math.max(maxSum, currentSum);
         }
         return maxSum;
-}
   }
+}
