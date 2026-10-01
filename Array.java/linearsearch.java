@@ -14,4 +14,4 @@ public class linearsearch {
       else
         System.out.println("nahi mila");
     }
-}
+} 

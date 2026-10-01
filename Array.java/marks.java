@@ -38,4 +38,4 @@ public class marks {
      }
      System.out.println("Sum of all elements: " + sum);
   }
-}
+}   

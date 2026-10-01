@@ -31,8 +31,8 @@ class Solution {
     
     
         }
-        
-    }
+          
+}    
 
 
 

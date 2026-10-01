@@ -17,7 +17,7 @@ public class initializationofArray {
         System.out.println(arr[i] + "");
       }
 
-
+ 
 
     }
 }
