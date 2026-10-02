@@ -1,0 +1,33 @@
+//  platform Leetcode 
+//You are given an array prices where prices[i] is the price of a given stock on the ith day.
+
+//You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+
+// Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+
+
+
+
+  class Solution {
+    public int maxProfit(int[] prices) {
+       if(prices.length <2) {
+        return 0;
+       }
+       int min_price =prices[0] ;
+       int max_profit = 0;
+       
+       for(int i=1; i<prices.length; i++){
+        int current_price = prices[i];
+
+        //update max profit
+        max_profit = Math.max(max_profit, current_price - min_price);
+
+        //update min price for next iteration
+        min_price = Math.min(min_price, current_price);
+       }
+       return max_profit;
+    }
+   
+}
+
